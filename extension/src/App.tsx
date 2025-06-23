@@ -1,10 +1,15 @@
+import DevModeToggle from './components/DevModeToggle'
+import ComponentTree from './components/ComponentTree'
 import './App.css'
 
 export default function App() {
   return (
     <div className="app-container">
-      <h1>Lit Profiler</h1>
-      <p>DevTools panel coming soon.</p>
+      <header className="app-header">
+        <h1>Lit Profiler</h1>
+        <DevModeToggle />
+      </header>
+      <ComponentTree />
     </div>
   )
 }

@@ -2,3 +2,46 @@
   padding: 1rem;
   font-family: sans-serif;
 }
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component-tree ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.component-tree li {
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.component-tree li.non-lit {
+  opacity: 0.6;
+}
+
+.component-tree li.updated {
+  border: 1px solid green;
+  animation: pulse 1.5s ease-out;
+}
+
+@keyframes pulse {
+  from {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.props-panel {
+  margin-top: 0.5rem;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+}
+
+.export-button {
+  margin-top: 1rem;
+}
