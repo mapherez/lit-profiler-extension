@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Lit Profiler",
-  "description": "DevTools extension for profiling Lit applications",
   "version": "0.1.0",
+  "description": "DevTools extension for profiling LitElement apps",
   "devtools_page": "devtools.html",
   "icons": {
-    "128": "vite.svg"
-  }
+    "128": "icon.png"
+  },
+  "permissions": []
 }
